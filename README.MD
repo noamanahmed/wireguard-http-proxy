@@ -36,7 +36,7 @@ docker-compose up -d
 You will be able to connect to HTTP Proxy using 127.0.0.1:8888. 
 
 Usage
-Your WireGuard VPN and TinyHTTP Proxy should now be up and running. You can configure your client device to connect to the WireGuard VPN to route your web traffic through the TinyHTTP Proxy which will be able to connect to HTTP Proxy using 127.0.0.1:8888.
+Your WireGuard VPN and TinyHTTP Proxy should now be up and running. You can configure your client device to connect to the WireGuard VPN using an HTTP Proxy running on 127.0.0.1:8888.
 
 
 ## Customization
