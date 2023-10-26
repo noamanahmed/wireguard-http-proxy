@@ -1,3 +1,4 @@
 wireguard/*
 !wireguard/wg_confs
-wireguard/wg_confs/*
+# wireguard/wg_confs/*
+# !wireguard/wg_confs/.gitkeep
