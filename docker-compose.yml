@@ -9,17 +9,17 @@ services:
     hostname: wireguard
     environment:
       PEERS: false
+      PUID : 1000
+      PGID : 1000
     cap_add:
       - NET_ADMIN
     volumes:
       - ./conf.d/wireguard:/config
       - ./conf.d/tinyproxy:/tinyproxy
       - ./docker/start.sh:/start.sh
+      - ./logs/tinyproxy/:/var/log/tinyproxy/:rw,cached
     ports:
       - "62820:51820/udp"
       - "8888:8888/tcp"
-    # restart: unless-stopped
-    # command: bash start.sh
-
-# volumes:
-#   redis_data: {}
+    sysctls:
+      - net.ipv4.conf.all.src_valid_mark=1
