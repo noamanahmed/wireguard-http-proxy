@@ -25,7 +25,7 @@ cd wireguard-http-proxy
 
 Provide atleast one wg0.conf 
 ```sh
-cp /your/system/path/to/wg0.conf conf.d/wireguard/
+cp /your/system/path/to/wg0.conf conf.d/wireguard/wg_confs
 ```
 
 Build and start the Docker containers:
