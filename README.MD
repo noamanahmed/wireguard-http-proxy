@@ -38,6 +38,8 @@ You will be able to connect to HTTP Proxy using 127.0.0.1:8888.
 Usage
 Your WireGuard VPN and TinyHTTP Proxy should now be up and running. You can configure your client device to connect to the WireGuard VPN using an HTTP Proxy running on 127.0.0.1:8888.
 
+## Basic Authentication
+To enable basic HTTP authentication for the proxy, uncomment `PROXY_BASIC_USERNAME` and `PROXY_BASIC_PASSWD`, and set their values accordingly.
 
 ## Customization
 You can customize the WireGuard and TinyHTTP Proxy configurations to suit your specific needs by editing the wireguard/wg0.conf and tinyproxy/tinyproxy.conf files respectively.
