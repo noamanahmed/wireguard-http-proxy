@@ -14,7 +14,7 @@ Docker Compose (usually bundled with Docker Desktop for Mac and Windows): Instal
 Clone this repository to your local machine:
 
 ```sh
-git clone https://github.com/noaman/wireguard-http-proxy.git
+git clone https://github.com/noamanahmed/wireguard-http-proxy.git
 ```
 
 Navigate to the project directory:
