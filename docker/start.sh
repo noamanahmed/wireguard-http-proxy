@@ -10,6 +10,10 @@ echo "Listen $ip" >> /tmp/tinyproxy.conf
 echo "Allow $ip" >> /tmp/tinyproxy.conf
 echo "Allow $gateway" >> /tmp/tinyproxy.conf
 echo "Allow 127.0.0.1" >> /tmp/tinyproxy.conf
+if [ -n "$PROXY_BASIC_USERNAME" ] && [ -n "$PROXY_BASIC_PASSWD" ]; then
+    echo "BasicAuth environment is configured. Omitting it to tinyproxy.conf."
+    echo "BasicAuth $PROXY_BASIC_USERNAME $PROXY_BASIC_PASSWD" >> /tmp/tinyproxy.conf
+fi
 
 cat /tmp/tinyproxy.conf
 #Run tinyproxy

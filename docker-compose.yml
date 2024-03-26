@@ -11,6 +11,8 @@ services:
       PEERS: false
       PUID : 1000
       PGID : 1000
+#      PROXY_BASIC_USERNAME: changeme
+#      PROXY_BASIC_PASSWD: changeme
     cap_add:
       - NET_ADMIN
     volumes:
